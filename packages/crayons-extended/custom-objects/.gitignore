@@ -1,11 +1,11 @@
-dist/
-www/
-loader/
+# dist/
+# www/
+# loader/
 storybook-dist/
 coverage/
 docs-dist/
-react/
-hydrate/
+# react/
+# hydrate/
 
 crayons-custom-objects-react/react-component-lib
 crayons-custom-objects-react/*.ts

@@ -1,17 +1,17 @@
-dist/
+# dist/
 storybook-dist/
-www/
-loader/
+# www/
+# loader/
 coverage/
 docs-dist/
-react/
+# react/
 src/custom-elements.json
 crayons-react/react-component-lib
 crayons-react/*.ts
 !crayons-react/index.ts
 .vuepress/public/build/
-css/
-hydrate/
+# css/
+# hydrate/
 
 *~
 *.sw[mnpcod]

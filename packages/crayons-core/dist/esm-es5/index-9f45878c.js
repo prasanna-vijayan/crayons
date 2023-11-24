@@ -1,0 +1,1 @@
+var MB_TO_KB=1e3;var KB_TO_BYTE=1e3;export{KB_TO_BYTE as K,MB_TO_KB as M};

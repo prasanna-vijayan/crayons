@@ -4,4 +4,4 @@ storybook-dist/
 www-dist/
 .idea/
 .npmrc
-packages/crayons-extended/crayons-core
+# packages/crayons-extended/crayons-core
