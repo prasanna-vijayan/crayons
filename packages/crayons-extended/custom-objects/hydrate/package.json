@@ -1,0 +1,6 @@
+{
+  "name": "@freshworks/crayons-custom-objects/hydrate",
+  "description": "CrayonsCustomObjects component hydration app.",
+  "main": "index.js",
+  "types": "index.d.ts"
+}

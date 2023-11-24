@@ -1,0 +1,98 @@
+/* Need to check with designer */
+/* Need to check with designer */
+:host {
+  font-family: var(--fw-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+:host {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.fb-field-lookup-root {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.fb-field-lookup-root .fb-field-lookup-header-label {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #475867;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+
+.fb-field-lookup-root .fb-field-lookup-relationship-description {
+  width: 100%;
+  margin-block-start: 4px;
+  font-size: 12px;
+  color: #183247;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+
+.fb-field-lookup-root .fb-field-lookup-relationship-object-name {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.fb-field-lookup-root .fb-field-lookup {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+}
+
+.fb-field-lookup-root .fb-field-lookup .fb-field-lookup-input {
+  width: 25%;
+}
+
+.fb-field-lookup-root .fb-field-lookup .fb-field-lookup-relationship-select-container {
+  height: auto;
+  box-sizing: border-box;
+  width: 35%;
+}
+
+.fb-field-lookup-root .fb-field-lookup .fb-field-lookup-relationship-select-container .fb-field-lookup-relationship-select {
+  width: 100%;
+}
+
+.fb-field-lookup-root .fb-field-lookup .fb-field-lookup-relationship-select-container .fb-field-lookup-relationship-select .fw-button-group__button--last {
+  width: 100%;
+}
+
+.fb-field-lookup-root .fb-field-lookup .fb-field-lookup-target-select-container {
+  height: auto;
+  box-sizing: border-box;
+  width: 40%;
+}
+
+.fb-field-lookup-root .fb-field-lookup .fb-field-lookup-target-select-container .fb-field-lookup-target-select {
+  --fw-popover-max-height: 262px;
+  width: 100%;
+}
+
+.fb-field-lookup-root .fb-field-lookup .fb-field-lookup-target-select-container .fb-field-lookup-target-select .fw-button-group__button--last {
+  width: 100%;
+}
+
+.fb-field-lookup-root .fb-field-lookup .fb-field-lookup-target-skeleton {
+  --fw-skeleton-border-radius: 4px;
+  padding-block-start: 24px;
+  min-width: 33%;
+  flex: 2 1 0;
+}

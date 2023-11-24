@@ -1,0 +1,87 @@
+/* Need to check with designer */
+/* Need to check with designer */
+:host {
+  font-family: var(--fw-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+:host {
+  display: block;
+}
+
+.sort {
+  --fw-popover-min-width: 220px;
+}
+
+.sort .sort-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #465789;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sort .sort-container:hover, .sort .sort-container:focus {
+  cursor: pointer;
+}
+
+.sort .sort-action {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  margin-inline-start: 2px;
+  border-radius: 4px;
+  padding-inline: 4px;
+  padding-block: 0px;
+  min-height: 36px;
+  color: #12344d;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+.sort .sort-action:focus {
+  border: 2px solid #2c5cc5;
+}
+
+.sort .order-label {
+  margin-inline-start: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #12344d;
+}
+
+.sort .divider {
+  border: 1px solid #edeff5;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .sort .dropdown-status-icon {
+    display: inline-flex;
+    margin-inline-start: 6px;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    min-height: 20px;
+    transition: none;
+  }
+}
+
+.sort .dropdown-status-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  min-height: 20px;
+  transition: all 0.1s;
+}
+
+:host(:not([dir="rtl"])) .sort .dropdown-status-icon.expanded, :host([dir="ltr"]) .sort .dropdown-status-icon.expanded {
+  transform: rotate(180deg);
+}
+
+:host([dir="rtl"]) .sort .dropdown-status-icon.expanded {
+  transform: rotate(-180deg);
+}

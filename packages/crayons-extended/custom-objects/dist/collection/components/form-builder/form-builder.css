@@ -1,0 +1,487 @@
+/* Need to check with designer */
+/* Need to check with designer */
+:host {
+  font-family: var(--fw-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+:host {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.form-builder {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  --fw-warning-color: #f48928;
+}
+
+.form-builder .form-builder-left-panel {
+  height: 100%;
+  width: 30%;
+  min-width: 200px;
+  max-width: 350px;
+  padding-inline: 20px;
+  padding-block: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background: #f5f7f9;
+  border-inline-end: 1px solid #ebeff3;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-header {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-product-header-label {
+  width: 100%;
+  margin: 0;
+  pointer-events: none;
+  user-select: none;
+  text-align: start;
+  color: #12344d;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  height: 28px;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-header-label {
+  width: 100%;
+  margin: 0;
+  pointer-events: none;
+  user-select: none;
+  text-align: start;
+  color: #12344d;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  height: 28px;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-header-desc {
+  width: 100%;
+  margin: 0;
+  pointer-events: none;
+  user-select: none;
+  text-align: start;
+  color: #475867;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-sub-header-description {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding-block-end: 0;
+  padding-inline: 2px;
+  padding-block-start: 2px;
+  margin-block-end: 8px;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-sub-header-description .form-builder-left-panel-sub-header-description-label {
+  width: 100%;
+  margin-block-end: 0;
+  margin-inline: 0;
+  margin-block-start: -2px;
+  pointer-events: none;
+  user-select: none;
+  text-align: start;
+  color: #475867;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-sub-header-description .form-builder-left-panel-sub-header-description-link-anchor {
+  margin-inline-start: 0px;
+  margin-block-end: 0;
+  margin-inline-end: 0;
+  margin-block-start: -2px;
+  text-align: start;
+  display: inline-block;
+  font-size: 14px;
+  color: #2c5cc5;
+  font-weight: 400;
+  text-decoration: none;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-header-desc-wo-header {
+  width: 100%;
+  margin-inline-start: 0;
+  margin-block-end: 0;
+  margin-inline-end: 0;
+  margin-block-start: 16px;
+  pointer-events: none;
+  user-select: none;
+  text-align: start;
+  color: #12344d;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  height: 24px;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-list-disabled-div {
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  padding-inline: 20px;
+  padding-block: 40px;
+  position: absolute;
+  inset-inline-start: -20px;
+  inset-block-end: -4px;
+  z-index: 2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+:host(:not([dir="rtl"])) .form-builder .form-builder-left-panel .form-builder-left-panel-list-disabled-div, :host([dir="ltr"]) .form-builder .form-builder-left-panel .form-builder-left-panel-list-disabled-div {
+  background-image: linear-gradient(180deg, rgba(245, 247, 249, 0.6) 35%, rgba(245, 247, 249, 0.93) 40% 60%, #f5f7f9 100%);
+}
+
+:host([dir="rtl"]) .form-builder .form-builder-left-panel .form-builder-left-panel-list-disabled-div {
+  background-image: linear-gradient(-180deg, rgba(245, 247, 249, 0.6) 35%, rgba(245, 247, 249, 0.93) 40% 60%, #f5f7f9 100%);
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-list-disabled-div .form-builder-left-panel-list-disabled-header {
+  width: 100%;
+  margin-block-end: 0;
+  margin-inline: 0;
+  margin-block-start: 24px;
+  pointer-events: none;
+  user-select: none;
+  text-align: start;
+  color: #12344d;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-list-disabled-div .form-builder-left-panel-list-disabled-message {
+  width: 100%;
+  margin-block-end: 0;
+  margin-inline: 0;
+  margin-block-start: 4px;
+  pointer-events: none;
+  user-select: none;
+  text-align: start;
+  color: #7b8e9f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-list-disabled-div .form-builder-left-panel-list-disabled-button {
+  margin-block-start: 20px;
+  width: max-content;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-list-container {
+  width: 100%;
+  height: auto;
+  margin-block-start: 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-list-container .form-builder-left-panel-field-types-list {
+  width: 100%;
+  height: auto;
+  gap: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-list-container .form-builder-left-panel-field-types-list .field-type-menu-description {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding-block-end: 0;
+  padding-inline: 2px;
+  padding-block-start: 2px;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-list-container .form-builder-left-panel-field-types-list .field-type-menu-description .field-type-menu-description-label {
+  width: 100%;
+  margin-block-end: 0;
+  margin-inline: 0;
+  margin-block-start: -2px;
+  pointer-events: none;
+  user-select: none;
+  text-align: start;
+  color: #475867;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-list-container .form-builder-left-panel-field-types-list .field-type-menu-description .field-type-menu-description-link-anchor {
+  margin-inline-start: 4px;
+  margin-block-end: 0;
+  margin-inline-end: 0;
+  margin-block-start: -2px;
+  text-align: start;
+  display: inline-block;
+  font-size: 12px;
+  color: #2c5cc5;
+  font-weight: 400;
+  text-decoration: none;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-list-container .form-builder-left-panel-field-types-list .field-type-menu-description .field-type-menu-help-fw-icon {
+  margin-inline-start: 4px;
+  vertical-align: middle;
+}
+
+.form-builder .form-builder-left-panel .form-builder-left-panel-list-container .form-builder-left-panel-field-types-list .field-type-menu-item-bottom-border {
+  width: 100%;
+  height: 1px;
+  margin-block-start: 2px;
+  border-width: 0;
+  background-color: #cfd7df;
+}
+
+.form-builder .form-builder-left-panel--disabled {
+  pointer-events: none;
+  user-select: none;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-builder .form-builder-right-panel {
+  width: 70%;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: #fff;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-header {
+  width: 100%;
+  height: 64px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin-block-end: 20px;
+  padding-inline-start: 32px;
+  padding-inline-end: 32px;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-header .form-builder-right-panel-header-content {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 990px;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-header .form-builder-right-panel-header-content .form-builder-right-panel-header-label {
+  width: auto;
+  margin: 0;
+  margin-inline-start: 2px;
+  pointer-events: none;
+  user-select: none;
+  text-align: start;
+  color: #12344d;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  height: 28px;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-header .form-builder-right-panel-header-content .form-builder-right-panel-header-right-filter-by-div {
+  width: 40%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-header .form-builder-right-panel-header-content .form-builder-right-panel-header-right-filter-by-div .form-builder-right-panel-header-filter-label {
+  width: auto;
+  margin: 0;
+  margin-inline-start: 2px;
+  pointer-events: none;
+  user-select: none;
+  text-align: start;
+  color: #92a2b1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  height: 20px;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-header .form-builder-right-panel-header-content .form-builder-right-panel-header-right-filter-by-div .form-builder-filter-by-field-type-select {
+  width: 230px;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-header .form-builder-right-panel-header-content .form-builder-right-panel-header-right-div {
+  width: 80%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-header .form-builder-right-panel-header-content .form-builder-right-panel-header-right-div .form-builder-right-panel-header-search-input {
+  max-width: 344px;
+  width: calc(100% - 250px);
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-header--disabled {
+  pointer-events: none;
+  user-select: none;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-list-container {
+  width: 100%;
+  height: calc(100% - 64px - 20px);
+  padding-block: 4px 32px;
+  padding-inline: 32px 32px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-list-container .form-builder-right-panel-empty-list-div {
+  width: 100%;
+  height: 100%;
+  padding-block-start: 60px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-list-container .form-builder-right-panel-empty-list-div .form-builder-right-panel-empty-list-content {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-list-container .form-builder-right-panel-empty-list-div .form-builder-right-panel-empty-list-content .form-builder-right-panel-empty-list-image-span {
+  width: 86px;
+  height: 86px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eff2fd;
+  border-radius: 50%;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-list-container .form-builder-right-panel-empty-list-div .form-builder-right-panel-empty-list-content .form-builder-right-panel-empty-list-image-span .form-builder-right-panel-empty-list-image {
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-list-container .form-builder-right-panel-empty-list-div .form-builder-right-panel-empty-list-content .form-builder-right-panel-empty-search-message {
+  width: 100%;
+  margin-inline: 0;
+  margin-block: 16px;
+  pointer-events: none;
+  user-select: none;
+  text-align: center;
+  color: #12344d;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-list-container .form-builder-right-panel-field-editor-list {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  gap: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-builder .form-builder-right-panel .form-builder-right-panel-list-container--reordering .form-builder-right-panel-field-editor-list fw-field-editor::part(delete-field-btn) {
+  transition: none !important;
+  opacity: 0 !important;
+}
+
+.cusomize-widget-list {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  gap: 10px;
+  box-sizing: border-box;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cusomize-widget-header {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.cusomize-widget-header .cusomize-widget-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.cusomize-widget-header .cusomize-widget-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #475867;
+  line-height: 20px;
+  padding-inline: 0px;
+  padding-block: 6px;
+}
+
+.cusomize-widget-modal-footer {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 12px;
+}

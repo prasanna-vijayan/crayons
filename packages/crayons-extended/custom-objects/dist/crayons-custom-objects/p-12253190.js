@@ -1,0 +1,1 @@
+const e=(e,t=!1)=>r=>{const a=r,o=a.key||a.keyCode;("Enter"===o||13===o||32===o||!t&&["Spacebar"," "].indexOf(o)>=0)&&(a.preventDefault(),e(a))},t=(e,t,r=1e3)=>{let a;return(...o)=>{clearTimeout(a),a=setTimeout((()=>{e.apply(t,o)}),r)}};export{t as d,e as h}
